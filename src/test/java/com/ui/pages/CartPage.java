@@ -26,16 +26,13 @@ public class CartPage extends BrowserUtility {
 	    
 	    for (WebElement row : rows) {
 	        // getting item name
-	        String itemName = row.findElement(By.xpath(".//td[1]")).getText().trim();//.split("\\s", 2)[1]; // Remove image text and get item name
-            System.out.println("itemname is "+itemName);
-	        // getting price
+	        String itemName = row.findElement(By.xpath(".//td[1]")).getText().trim();//
+            // getting price
 	        String priceText = row.findElement(By.xpath(".//td[2]")).getText().replace("$", "").trim();
 	        double price = Double.parseDouble(priceText);
-	        System.out.println("price is "+price);
 	        // getting quantity 
 	        WebElement quantityElement = row.findElement(By.xpath(".//td[3]//input"));
 	        int quantity = Integer.parseInt(quantityElement.getAttribute("value").trim());
-	        System.out.println("quantity is "+quantity);
 	        // getting Subtotal 
 	        String subtotalText = row.findElement(By.xpath(".//td[4]")).getText().replace("$", "").trim();
 	        double actualSubtotal = Double.parseDouble(subtotalText);	        	       
