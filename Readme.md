@@ -52,6 +52,10 @@ Before running this framework, ensure the following software is installed on you
 **Running Tests locally on bash:**
 
     mvn test
+    
+## Integrated the project Github Actions 
+This automation framework is integrated with github actions.
+The tests will be executed for every commit 
 
 ## Reports
 Reports are generated using surefireplugin.
