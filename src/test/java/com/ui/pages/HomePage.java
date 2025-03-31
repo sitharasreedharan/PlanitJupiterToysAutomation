@@ -18,11 +18,13 @@ public final class HomePage extends BrowserUtility {
 	}
 
 	public ContactPage goToContactPage() {
+		waitForElement(CONTACT_LINK_LOCATOR,"clickable",20);
 		clickOn(CONTACT_LINK_LOCATOR);
 		return new ContactPage(getDriver());
 	}
 
 	public ShopPage goToShopPage() {
+		waitForElement(SHOP_LINK_LOCATOR,"clickable",20);
 		clickOn(SHOP_LINK_LOCATOR);
 		return new ShopPage(getDriver());
 	}
