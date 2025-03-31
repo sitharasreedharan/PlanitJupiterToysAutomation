@@ -65,6 +65,7 @@ public abstract class BrowserUtility {
 
 	public void goToWebsite(String url) {
 		driver.get().get(url);
+		maximizeWindow();
 	}
 
 	public void maximizeWindow() {
