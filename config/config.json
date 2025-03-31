@@ -1,5 +1,5 @@
 {
   "url": "https://jupiter.cloud.planittesting.com/",
-  "headless": "false",
+  "headless": "true",
   "browser": "chrome"
 }
