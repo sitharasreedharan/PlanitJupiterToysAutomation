@@ -29,6 +29,7 @@ Before running this framework, ensure the following software is installed on you
 - **Cross-Browser Testing**: Supports running tests on different browsers.
 - **Headless Mode**: Faster execution by running tests in headless mode.
 - **Reporting**:Generates surefire plugin reports
+- **CICD**: Integrated with Github Actions for Continuous execution
 
 
 ## Technologies Used
@@ -59,7 +60,8 @@ The tests will be executed for every commit
 
 ## Reports
 Reports are generated using surefireplugin.
-Report will be generated at PlanitJupiterToysAutomation/target/surefire-reports/emailable-report.html
+Report will be generated at PlanitJupiterToysAutomation/target/surefire-reports/emailable-report.html locally.
+In Github Actions reports can be dowloaded from Artifacts > surefire-reports folder
 
 
     
